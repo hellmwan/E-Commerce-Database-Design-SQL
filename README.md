@@ -1,18 +1,28 @@
-# SQL-Practice-Projects
+# 🛒 E-Commerce Database Management System
 
-# SQL Learning Journey 🚀
+Bu proje, modern bir e-ticaret platformunun veritabanı mimarisini, veri tutarlılığı kurallarını ve analitik raporlama süreçlerini modellemektedir. Bir Bilgisayar Mühendisliği öğrencisi olarak, veritabanı yönetim sistemlerindeki (DBMS) yetkinliklerimi sergilemek amacıyla hazırlanmıştır.
 
-Bu depoda, BTK Akademi ve ders notlarım üzerinden ilerlediğim SQL öğrenme sürecindeki projelerimi paylaşıyorum.
+## 🛠 Teknik Özellikler ve Uygulanan Konseptler
 
-## 1. Kütüphane Yönetim Sistemi (Basic Schema)
-Bu çalışma, veritabanı tasarımı, tablo ilişkileri ve temel CRUD işlemlerini içerir.
+Bu veritabanı tasarımı sırasında aşağıdaki ileri seviye SQL pratikleri uygulanmıştır:
 
-### Veritabanı Şeması
-* **Kategoriler**: Kitap türlerini tutar.
-* **Kitaplar**: Kitap bilgilerini ve kategori bağlantısını tutar.
-* **Ogrenciler**: Kütüphane üyelerini tutar.
-* **OduncIslemleri**: Öğrenciler ve kitaplar arasındaki ilişkiyi yönetir (Foreign Keys).
+* **İlişkisel Veritabanı Modelleme:** `Categories`, `Products`, `Customers` ve `Orders` tabloları arasında mantıksal `Primary Key` ve `Foreign Key` ilişkileri kurulmuştur.
+* **Veri Doğrulama ve Kısıtlamalar (Constraints):**
+    * **CHECK:** Ürün fiyatlarının ve stok miktarlarının 0'dan küçük olamayacağı garanti altına alınmıştır.
+    * **UNIQUE:** E-posta adresleri ve kategori isimlerinin tekrarlanması önlenmiştir.
+    * **DEFAULT:** Sipariş ve kayıt tarihlerinin sistem tarafından otomatik atanması sağlanmıştır.
+* **Veri Temizleme (Data Cleaning):** SQL string fonksiyonları (`SUBSTR`, `UPPER`, `LOWER`) kullanılarak, kullanıcı kaynaklı hatalı girilen (örn: karışık harfli isimler) verilerin normalize edilmesi sağlanmıştır.
+* **Analitik Raporlama:** Karmaşık `JOIN` operasyonları ve `GROUP BY` gibi kümeleme fonksiyonları ile "En Çok Harcama Yapan Müşteriler" gibi iş zekası raporları oluşturulmuştur.
 
-### Örnek Sorgu
-```sql
-SELECT Ad, KitapAdı FROM OduncIslemleri ... 
+## 📂 Dosya Yapısı
+
+- `Schema.sql`: Veritabanı şemasını, tabloları ve kısıtlamaları içeren DDL (Data Definition Language) kodları.
+- `Data.sql`: Sistemi test etmek için oluşturulmuş, gerçekçi senaryolara dayanan örnek veri seti.
+- `Advanced_Analysis.sql`: Veri analizi ve raporlama için hazırlanan ileri seviye SQL sorguları.
+
+## 🚀 Proje Amacı
+Bu çalışma, verinin sadece saklanmasını değil, aynı zamanda iş kurallarına uygun şekilde doğrulanmasını ve anlamlı birer bilgiye (insight) dönüştürülmesini amaçlamaktadır. 
+
+---
+**Geliştirici:** Ayşe 
+**Bölüm:** Bilgisayar Mühendisliği (3. Sınıf)
