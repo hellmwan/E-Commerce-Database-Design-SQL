@@ -23,6 +23,6 @@ Bu veritabanı tasarımı sırasında aşağıdaki ileri seviye SQL pratikleri u
 ## 🚀 Proje Amacı
 Bu çalışma, verinin sadece saklanmasını değil, aynı zamanda iş kurallarına uygun şekilde doğrulanmasını ve anlamlı birer bilgiye (insight) dönüştürülmesini amaçlamaktadır. 
 
----
-**Geliştirici:** Ayşe 
-**Bölüm:** Bilgisayar Mühendisliği (3. Sınıf)
+* **Veritabanı Programlama (Advanced SQL):**
+    * **Triggers:** Stok yönetimi, veri loglama ve güvenlik kısıtlamaları için otomatik tetikleyiciler tasarlandı.
+    * **Stored Procedures & Logic:** Toplu indirim süreçleri ve stok durum güncellemeleri için iş mantığı sorguları oluşturuldu.
