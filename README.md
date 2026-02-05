@@ -13,6 +13,10 @@ Bu veritabanı tasarımı sırasında aşağıdaki ileri seviye SQL pratikleri u
     * **DEFAULT:** Sipariş ve kayıt tarihlerinin sistem tarafından otomatik atanması sağlanmıştır.
 * **Veri Temizleme (Data Cleaning):** SQL string fonksiyonları (`SUBSTR`, `UPPER`, `LOWER`) kullanılarak, kullanıcı kaynaklı hatalı girilen (örn: karışık harfli isimler) verilerin normalize edilmesi sağlanmıştır.
 * **Analitik Raporlama:** Karmaşık `JOIN` operasyonları ve `GROUP BY` gibi kümeleme fonksiyonları ile "En Çok Harcama Yapan Müşteriler" gibi iş zekası raporları oluşturulmuştur.
+* **Veritabanı Programlama (Advanced SQL):**
+    * **Triggers:** Stok yönetimi, veri loglama ve güvenlik kısıtlamaları için otomatik tetikleyiciler tasarlandı.
+    * **Stored Procedures & Logic:** Toplu indirim süreçleri ve stok durum güncellemeleri için iş mantığı sorguları oluşturuldu.
+
 
 ## 📂 Dosya Yapısı
 
@@ -23,6 +27,3 @@ Bu veritabanı tasarımı sırasında aşağıdaki ileri seviye SQL pratikleri u
 ## 🚀 Proje Amacı
 Bu çalışma, verinin sadece saklanmasını değil, aynı zamanda iş kurallarına uygun şekilde doğrulanmasını ve anlamlı birer bilgiye (insight) dönüştürülmesini amaçlamaktadır. 
 
-* **Veritabanı Programlama (Advanced SQL):**
-    * **Triggers:** Stok yönetimi, veri loglama ve güvenlik kısıtlamaları için otomatik tetikleyiciler tasarlandı.
-    * **Stored Procedures & Logic:** Toplu indirim süreçleri ve stok durum güncellemeleri için iş mantığı sorguları oluşturuldu.
