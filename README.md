@@ -23,6 +23,9 @@ Bu veritabanı tasarımı sırasında aşağıdaki ileri seviye SQL pratikleri u
 - `Schema.sql`: Veritabanı şemasını, tabloları ve kısıtlamaları içeren DDL (Data Definition Language) kodları.
 - `Data.sql`: Sistemi test etmek için oluşturulmuş, gerçekçi senaryolara dayanan örnek veri seti.
 - `Advanced_Analysis.sql`: Veri analizi ve raporlama için hazırlanan ileri seviye SQL sorguları.
+- `Advanced_Features.sql`: Veritabanı otomasyonu için tasarlanmış; inserted tablosu tabanlı Trigger (Tetikleyici) yapılarını ve iş mantığını yürüten Stored Procedure (Saklı Yordam) örneklerini içeren teknik dosya.
+- ## 📊 Veritabanı Şeması (ER Diagram)
+![Database Schema](./database-schema.png)
 
 ## 🚀 Proje Amacı
 Bu çalışma, verinin sadece saklanmasını değil, aynı zamanda iş kurallarına uygun şekilde doğrulanmasını ve anlamlı birer bilgiye (insight) dönüştürülmesini amaçlamaktadır. 
